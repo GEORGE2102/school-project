@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Admin Updates Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>community tracking system
+    </title>
+</head>
+<body>
+<nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">CDF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CDF</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.php">login user</a>
+                  <a class="nav-link" href="signup.php">signup</a>
+                  <a class="nav-link" href="news_feed.php">News</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Adminlogin.php">admin login</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1><span>\ We Are Here \</span></h1>
+                    <p>Better Insights For Business Growth</p>
+                    <button class="btn-header">View More</button>
+                </div>
+                <div class="header-image">
+                    <img src="images/herolady.png" alt="Header Image">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src="images/pexels-alexas-fotos-2255459.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+          <img src="images/woman thinking.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides fade">
+          <img src="images/pexels-energepiccom-3650159.jpg" style="width:100%">
+      </div>
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div> 
+      <!-- Right container -->
+      <div class="container-right">
+          <div class="content">
+              <div class="image">
+                  <img src="images/woman thinking.jpg" alt="Image">
+              </div>
+              <div class="text-right">
+                  <h2 class="large-text-right">Turn your ideas into reality. Ever Thought Of a Business? But Dont Have The Money To Start Thats Why We Are Here!</h2>
+              </div>
+          </div>
+      </div>
+      <div class="services-section">
+        <div class="container">
+            <h2>\ Our Services \</h2>
+            <div class="services-cards">
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/web dev.svg" alt="Service Icon 1">
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Design / Development</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/UI-UX ico.svg" alt="Service Icon 2">
+                    </div>
+                    <div class="service-content">
+                        <h3>UI/UX Design</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/web migration ico.svg" alt="Service Icon 3">
+                    </div>
+                    <div class="service-content">
+                        <h3>Website Migration</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/app dev ico.svg" alt="Service Icon 4">
+                    </div>
+                    <div class="service-content">
+                        <h3>App Development</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/hubspot int ico.svg" alt="Service Icon 5">
+                    </div>
+                    <div class="service-content">
+                        <h3>HubSpot Integration</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="images/email ico.svg" alt="Service Icon 6">
+                    </div>
+                    <div class="service-content">
+                        <h3>Email Marketing</h3>
+                        <p>It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-with-background">
+      <div class="container-with-background">
+          <div class="content">
+              <h2>Welcome to Our Website</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="download-link" style="border: none;">Learn More</button>
+          </div>
+      </div>
+  </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 website designe : </p>
+            <ul class="footer-links"><li><a href="#">privacy policy</a></li></ul>
+            <ul class="footer-links"><li><a href="#">terms of service</a></li></ul>
+            <ul class="footer-links"><li><a href="#">contact us</a></li></ul>
+            <ul class="footer-links"><li><a href="#">icuZambia.net</a></li></ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+</html>
