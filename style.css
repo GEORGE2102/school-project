@@ -1,0 +1,797 @@
+
+
+/* reset common styles */
+body h1,h2,h3, p , ul, ol, li{
+    margin: 0;
+    padding: 0;
+    
+}
+/*
+setting primary colors
+*/
+:root{
+    --primary-bg-color:#333;
+    --primary-text-color:#fff;
+    --primary-hovor-color:#ff9900;
+    --priamary-button-color:#4caf50;
+}
+/* navigation bar resposive*/
+/* hides the nav by default on smaller screens*/
+#main-nav{
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    
+
+
+}
+/*styles for small screens when nav is toggled*/
+.nav-open{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    padding: 15px;
+    color: var(--primary-text-color);
+}
+.topnav {
+    background-color: var(--primary-bg-color);
+    overflow: hidden;
+}
+.nav-open li{
+    margin-bottom: 10px;
+
+}
+/* toggle button styles*/
+.toggle-button{
+    display: none;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+}
+/* adjustment for small screens*/
+@media only screen and (max-width:768px){
+    .toggle-button{
+        display: block;
+        margin-top: 5px;
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+        
+
+    }
+    .toggle-button:hover{
+        transition: 0,3s ease;
+        background-color: #fff;
+        color: #333;
+
+    }
+    #main-nav{
+        display: none;
+    
+    }
+   
+    
+    .auth-section{
+        margin-bottom: 10px;
+    }
+
+
+}
+/* custom-button design*/ 
+.custom-button-header{
+    background-color: var(--priamary-button-color);
+    color: var(--primary-text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+.custom-button-header:hover{
+    background: none;
+    border: 1px solid #4caf50;
+    color: var(--primary-text-color);
+    
+    
+}
+#signup-link{
+    margin-top:5px;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+}
+#signup-link:hover{
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.header{
+    position: relative;
+    height: 50vh;
+    background-image: url('images/pexels-flambo-1112080.jpg');
+    background-position: fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 2.5em;
+    color: var(--priamary-button-color);
+
+}
+p{
+    font-size: 1.2rem;
+
+}
+/*  */
+
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer p{
+    margin: 0;
+}
+.footer-links {
+    list-style: none;
+    display: block;
+    margin-right: 10px;
+
+}
+.footer-links li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+}  
+
+  /* sign up page log in page designes */
+  #text{
+
+    height: 25px;
+    border-radius: 5px;
+    padding: 4px;
+    border: solid thin #aaa;
+    width: 100%;
+}
+
+#button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#box{
+
+    background-color: var(--primary-bg-color);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
+.user_id{
+    width: 300px;
+    height: 50px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    border: none;
+}
+.user_login_header{
+width: 100%;
+height: 50px;
+height: fit-content;
+background-color: gray;
+border-radius: 3px;
+margin-top: 15px;
+margin-bottom: 20px;
+align-items: center;
+}
+hr{
+    width: 50%;
+}
+.hr{
+    width: 100%;
+}
+.h1_main{
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*admin table styles*/
+
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e3ebf3; /* Light blue background color */
+    border-radius: 15px;
+    justify-content: center;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background color for header */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #faf4f4; /* Alternate row background color */
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust table styles for smaller screens */
+    table {
+        border: none;
+    }
+    th, td {
+        border: none;
+        padding: 6px;
+        display: block;
+        text-align: left;
+    }
+    th {
+        display: none; /* Hide table headers on small screens */
+    }
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+.progress-container {
+    width: 100%; /* Set the width of the progress container */
+    background-color: yellowgreen; /* Set the background color */
+}
+
+.progress-bar {
+    width: 100%; /* Set the width of the progress bar */
+    background-color: #ddd; /* Set the background color of the progress bar container */
+    position: relative; /* Position relative for absolute positioning of the progress */
+}
+
+.progress {
+    height: 20px; /* Set the height of the progress bar */
+    background-color: green; /* Set the color of the progress bar */
+    width: 0; /* Initial width of the progress bar */
+}
+
+.pending {
+    position: absolute; /* Position absolute for absolute positioning within the progress bar container */
+    top: 50%; /* Align to the middle vertically */
+    left: 50%; /* Align to the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Set the color of the pending text */
+}
+
+
+
+   /* CSS styles for admin updates */
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.update {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.update-content {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.update-time {
+    color: #888;
+    font-size: 12px;
+}
+
+
+.download-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.download-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/*  style for the body oh home page*/
+.container-left {
+    max-width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.container-right {
+    max-width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.text-left {
+    float: right;
+    width: 60%;
+    padding-left: 20px; /* Add left padding for space */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-right: 20px;
+    text-align: center; /* Center the text */
+
+
+}
+.text-right {
+    float: left;
+    width: 60%;
+    padding-right: 20px; /* Add right padding for space */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center; /* Center the text */
+}
+.image {
+    float: left; /* Make the image float to the left */
+    width: 40%;
+    padding-right: 20px; /* Add right padding for space */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Custom styles for text */
+.large-text-left {
+    font-size: 24px;
+    color: black; /* Change text color */
+}
+.large-text-right {
+    font-size: 30px;
+    font-weight: 250;
+    color: black; /* Change text color */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .text-left, .text-right, .image {
+        width: 100%;
+        float: none;
+        padding: 0; /* Reset padding for small screens */
+    }
+}
+/* slide show css*/
+/* slide show css*/
+.slideshow-container {
+    background-color: #888;
+    max-width: 600px;
+    max-height: 300px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Add this to ensure images do not overflow */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: 100%; /* Ensure the image fills the container vertically */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+       /* Style for announcement form */
+       .announcement-form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .announcement-form h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+    }
+    
+    .announcement-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+    }
+    
+    .announcement-form input[type="text"],
+    .announcement-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .announcement-form textarea {
+        height: 150px;
+    }
+    
+    .announcement-form input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .announcement-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* main header */
+
+   
+/* Main Header Styles */
+.main-header {
+    background-color: #f0f0f0;
+    padding: 50px 20px; /* Adjusted padding */
+    text-align: center;
+    min-height: 500px; /* Updated to min-height */
+}
+
+.container {
+    max-width: 1200px; /* Moved max-width to avoid conflicting with .about-section */
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-text span {
+    width: 188px;
+    height: 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color:#0056b3;
+}
+
+.header-text p {
+width: 422px;
+height: 116px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+/* Dark Blue */
+color: #0E1F51;
+
+
+}
+
+.btn-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color:#0E1F51;
+    transition: 1sec ease;
+}
+
+.btn-header:focus {
+    outline: none;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .header-text {
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .header-image {
+        margin-left: 0;
+    }
+}
+
+.services-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.services-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.services-section h2 {
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#0056b3;
+    margin-bottom: 30px;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    width: calc(50% - 30px); /* Adjusted width for two cards per row with margin included */
+    max-width: 300px;
+    margin: 15px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Display content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card .icon {
+    width: 65px;
+    height: 60px;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 20px; /* Add space between icon and content */
+}
+
+.service-card .icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.service-card .service-content {
+    text-align: center; /* Center text */
+}
+
+.service-card h3 {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0E1F51;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .service-card {
+        width: calc(100% - 30px); /* Adjusted width for single card per row with margin included */
+    }
+}
+
+.container-with-background{
+    background-image: url('images/nature.jpg');
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content {
+    width: 945px;
+    height: 294px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    .content h2 {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
